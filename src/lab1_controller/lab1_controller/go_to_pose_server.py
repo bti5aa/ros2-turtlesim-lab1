@@ -187,7 +187,7 @@ class GoToPoseServer(Node):
 
                 if distance > position_tolerance:
                     # Rotate toward the target before moving
-                    if abs(heading_error) > 0.12:
+                    if abs(heading_error) > 0.04:
                         twist.angular.z = max(
                             -self.max_angular_speed,
                             min(
@@ -206,7 +206,7 @@ class GoToPoseServer(Node):
                             -self.max_angular_speed,
                             min(
                                 self.max_angular_speed,
-                                2.0 * heading_error
+                                4.0 * heading_error
                             )
                         )
 
