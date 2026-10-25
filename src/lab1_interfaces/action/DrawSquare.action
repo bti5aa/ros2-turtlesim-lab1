@@ -1,0 +1,7 @@
+float64 side_length
+float64 speed
+---
+bool success
+string message
+---
+uint8 sides_completed

@@ -1,0 +1,5 @@
+
+go_to_pose_server:
+  ros__parameters:
+    max_linear_speed: 2.0
+    max_angular_speed: 2.0
